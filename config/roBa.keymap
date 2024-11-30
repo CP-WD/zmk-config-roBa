@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -17,6 +18,16 @@
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <18 19>;
+        };
+
+        left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <18 19>;
+        };
+
+        right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <19 20>;
         };
     };
 
@@ -45,10 +56,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E           &kp R           &kp T                                            &kp Y          &kp U            &kp I        &kp O            &kp P
-&kp A      &kp S         &kp D           &kp F           &kp G        &none          &none                &kp H          &kp J            &kp K        &kp L            &kp ENTER
-&kp Z      &mt X RCTRL   &mt C LEFT_ALT  &mt V LEFT_WIN  &kp B        &none          &none                &kp B          &mt N RIGHT_WIN  &mt COMMA M  &mt COMMA RCTRL  &kp PERIOD
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN    &none           &lt 2 SPACE  &lt 1 SPACE    &mt RIGHT_SHIFT TAB  &kp BACKSPACE                                                 &kp DEL
+&kp Q      &kp W         &kp E           &kp R           &kp T                                            &kp Y          &kp U            &kp I            &kp O            &kp P
+&kp A      &kp S         &kp D           &kp F           &kp G        &none          &none                &kp H          &kp J            &kp K            &kp L            &kp ENTER
+&kp Z      &mt LCTRL X   &mt LEFT_ALT C  &mt LEFT_WIN V  &kp B        &none          &none                &kp B          &mt RIGHT_WIN N  &mt RIGHT_ALT M  &mt RCTRL COMMA  &kp PERIOD
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN    &none           &lt 2 SPACE  &lt 1 SPACE    &mt RIGHT_SHIFT TAB  &kp BACKSPACE                                                     &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
