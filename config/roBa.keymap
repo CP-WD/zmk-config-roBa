@@ -65,7 +65,7 @@
 &trans  &kp F9  &kp F10  &kp F11  &kp F12                               &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans      &trans           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp CAPSLOCK
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans      &trans           &trans    &mkp MB1       &mkp MB2      &trans     &trans
-&trans  &trans  &trans   &trans   &trans   &trans      &kp RIGHT_SHIFT  &trans                                            &trans
+&trans  &trans  &trans   &trans   &none    &trans      &kp RIGHT_SHIFT  &trans                                            &trans
             >;
         };
 
@@ -83,7 +83,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &none   &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans  &mo 1       &trans  &trans                              &trans
             >;
         };
     };
